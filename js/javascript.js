@@ -1,8 +1,9 @@
+// food supplies
 var ctx = document.getElementById("myChart").getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'bar',
     data: {
-        labels: ["Water", "Aardappellen", "Fruit", "Fill", "Fill", "Fill"],
+        labels: ["Water", "Aardappellen", "Fruit", "Vlees", "Fris", "Snacks"],
         datasets: [{
             label: 'Overblijvende provisie',
             data: [12, 19, 3, 5, 2, 3],

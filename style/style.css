@@ -4,6 +4,7 @@ html, body, menu, p, h1, h2, h3, section {
 }
 body{
     background-color: #333333;
+    font-family: 'Arial', sans-serif;
 }
 
 /* navbar/logo */
@@ -14,17 +15,31 @@ header {
     height: 80px;
 }
 .logo{
-	width: 320px;
-	
+    width: 320px;
 }
+/* einde navbar code*/
 
-
-
-
-.data1{
-	height: 500px;
-	width: 500px;
+/*begin containers*/
+main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
+main h1{
+    text-align: center;
+    color: #fff;
+}
+.data{
+	width: 100%;
+    padding: 15px
+}
+.innerData{
+    padding: 30px;
+    background-color: #3F4347;
+    border-radius: 15px;
+}
+/*Einde containers*/
 
 @media only screen and (max-width: 959px) {
 
@@ -35,5 +50,11 @@ header {
 }
 
 @media only screen and (min-width: 1200px) {
-
+    main{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .data{
+        width: 30%;
+    }
 }
