@@ -38,20 +38,47 @@ var myChart = new Chart(ctx, {
     }
 });
 
+
+
 //afstand
-var ctxspeed = document.getElementById("afstand").getContext("2d");
-var myChart = new Chart(ctxspeed, {
+var ctxAfstand = document.getElementById("afstand").getContext("2d");
+
+var myAfstandChart = new Chart(ctxAfstand, {
   type: 'line',
 
   data: {
     labels: ["Dag 1", "Dag 2", "Dag 3", "Dag 4", "Dag 5", "Dag 6"],
     datasets: [{
-      borderColor: '#ffff00',
-      backgroundColor: '#ffff00',
-      borderWidth: 5,
-      steppedLine: true,
-      fill: false,
-      data: [20, 50, 90, 140, 165, 210]
+        label: 'Afstand',
+        borderColor: '#ffff00',
+        backgroundColor: '#ffff00',
+        borderWidth: 5,
+        fill: false,
+        steppedLine: true,
+        data: [20, 50, 90, 140, 165, 210]
     }]
-  },
+  }
+});
+
+
+
+//Snelheid
+var ctxSpeed = document.getElementById('snelheid').getContext('2d');
+
+var mySpeedChart = new Chart(ctxSpeed, {
+  type: 'line',
+
+  data: {
+    labels: ["Dag 0", "Dag 1", "Dag 2", "Dag 3", "Dag 4", "Dag 5", "Dag 6"],
+    datasets: [{
+        label: 'Snelheid',
+        borderColor: '#00B2EE',
+        backgroundColor: '#00B2EE',
+        borderWidth: 5,
+        fill: true,
+        pointBackgroundColor: '#fff',
+        pointBorderColor: '#fff',
+        data: [0, 500, 700, 930, 1220, 1480, 1760]
+    }]
+  }
 });
