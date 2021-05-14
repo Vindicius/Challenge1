@@ -41,9 +41,9 @@ var myChart = new Chart(ctx, {
 
 
 //afstand
-var ctxAfstand = document.getElementById("afstand").getContext("2d");
+var afstand = document.getElementById("afstand").getContext("2d");
 
-var myAfstandChart = new Chart(ctxAfstand, {
+var myAfstandChart = new Chart(afstand, {
   type: 'line',
 
   data: {
@@ -63,9 +63,9 @@ var myAfstandChart = new Chart(ctxAfstand, {
 
 
 //Snelheid
-var ctxSpeed = document.getElementById('snelheid').getContext('2d');
+var snelheid = document.getElementById('snelheid').getContext('2d');
 
-var mySpeedChart = new Chart(ctxSpeed, {
+var mySpeedChart = new Chart(snelheid, {
   type: 'line',
 
   data: {
